@@ -55,23 +55,23 @@ c)      在3处：显示发送的数据和返回的实时信息。
 
 绑定数据：
 
-![img](实验4/15.JPG)
+![img](实验4/16.JPG)
 
 接收数据并将数据返回到对应文本框中：
 
-![img](实验4/16.JPG)
+![img](实验4/15.JPG)
 
-![img](实验4/17.JPG)
+![img](实验4/18.JPG)
 
 d)      在4处，显示出Arduino上温度、光强随时间变化的曲线图。在位置7显示出两个数据物理数值，光强度可以用ADC值表示。
 
 对ZedGraph进行设置如下：
 
-![img](实验4/18.JPG)
+![img](实验4/20.JPG)
 
 在DataReceivedHandler中判断收到的返回数据第一位是否为E，若是，则调用drawline函数进行曲线绘制。
 
-![img](实验4/19.JPG)
+![img](实验4/21.JPG)
 
 e)      在6处：利用滑块(slider)控制Arduino板上的PWM输出端，实现五种LED灯的明暗控制（数值范围0-255），在界面的○处显示RGB混合色,发送按钮将设定的各LED的PWM值以MIDI协议规定的格式发送给Arduino，Arduino可以完成各PWM输出端的PWM数值设定。
 
