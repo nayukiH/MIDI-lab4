@@ -29,7 +29,7 @@
 
 如图所示
 
-![img](MIDI-lab4/实验4/1.JPG)
+![img](实验4/1.JPG)
 
 a)     在1处：combobox显示所有pc机上的串口名，1处combobox显示设定的传输波特率速率(BPS)（9600、19200、38400、57600）。选择该速率时，与Arduino开发板的串口BaudRate一致。
 
