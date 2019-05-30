@@ -77,21 +77,21 @@ e)      在6处：利用滑块(slider)控制Arduino板上的PWM输出端，实�
 
 动态RGB混合色的实现：当滑块值改变时触发事件
 
-![img](实验4/20.JPG)
+![img](实验4/22.JPG)
 
 实现拖动滑块变化对应LED灯亮度的功能：
 
 最初设想在同一事件中实现，但会抛出偏置值越界的异常，所以考虑在MouseLeftButtonUp事件中实现这个功能。但由于Slider由RepeatButton和Thumb组成，拖动滑块时会先触发RepeatButton的MouseLeftButtonUp，之后将e.Handled设为真，所以无法进入滑块的MouseLeftButtonUp事件，故使用AddHandler方法，不论第三个参数是否为true都要执行该方法。
 
-![img](实验4/21.JPG)
-
-![img](实验4/22.JPG)
+![img](实验4/25.JPG)
 
 ![img](实验4/23.JPG)
 
+![img](实验4/24.JPG)
+
 f)       在7处：点击log开始按钮，显示FileDialog让用户填写需要记录的文件名，文件名的缺省值：log-YYYY-MM-DD-HH-mm-SS.txt,YYYY为年份、MM为月份、DD为日期、HH为时、mm为分、SS为秒，用户点击OK就开始记录实时信息，点击Cancel放弃本次记录。点击log结束按钮，将记录结果存盘关闭。需要存储的数据为：温度和LED灯PWM数据、串口设定值、实时通讯数据等，存储格式为csv或Json或XML等格式之一。
 
-![img](实验4/24.JPG)
+![img](实验4/26.JPG)
 
 
 
